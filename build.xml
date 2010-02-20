@@ -1,0 +1,27 @@
+<project name="Mango-Salsa" default="publish-to-test" basedir=".">
+
+	<property name="dir.dev" value="${basedir}" />
+	<property name="dir.test" value="/Users/adam/www/MangoDev/components/plugins/user/Salsa/" />
+	
+	<target name="publish-to-test">
+		<copy todir="${dir.test}" verbose="true">
+			<fileset dir="${dir.dev}/Salsa">
+				<include name="*.cfc" />
+				<include name="*.cfm" />
+				<include name="*.jar" />
+				<include name="plugin.xml" />
+				<include name="lib/*.jar" />
+			</fileset>
+		</copy>
+	</target>
+	
+	<target name="make-zip">
+		<delete file="${dir.dev}/build.zip" />
+		<zip 
+			destfile="${dir.dev}/build.zip"
+			basedir="${dir.dev}"
+			excludes="**/.DS_Store,build.xml,.git/**,.settings/**,.project,settings.xml,.gitignore"
+		/>
+	</target>
+
+</project>

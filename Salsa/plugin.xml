@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+LICENSE INFORMATION:
+
+Copyright 2010, Adam Tuttle
+ 
+Licensed under the Apache License, Version 2.0 (the "License"); you may not 
+use this file except in compliance with the License. 
+
+You may obtain a copy of the License at 
+
+	http://www.apache.org/licenses/LICENSE-2.0 
+	
+Unless required by applicable law or agreed to in writing, software distributed
+under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR 
+CONDITIONS OF ANY KIND, either express or implied. See the License for the 
+specific language governing permissions and limitations under the License.
+
+VERSION INFORMATION:
+
+This file is part of Salsa.
+-->
+<plugin id="com.fusiongrokker.plugins.Salsa" name="Salsa" version="1.0" provider-name="Adam Tuttle | http://fusiongrokker.com" class="Salsa.Handler">
+	<description><![CDATA[ Converts Markdown syntax in your posts to HTML. See: <a href="http://gist.github.com/????">How to setup a Markdown editor for Mango Blog</a>.<br/>
+	<br/>
+	Written by <a href="http://fusiongrokker.com">Adam Tuttle</a><br/>
+	Find the latest version at: <a href="http://fusiongrokker.com/page/projects">FusionGrokker</a> ]]></description>
+	<requiresVersion match="greaterOrEqual">1.4.3</requiresVersion>
+	<listens>
+		<event name="settingsNav" type="synch" priority="5" />
+		<event name="Salsa-settings" type="synch" priority="0" />
+		<event name="postGetContent" type="synch" priority="10" />
+		<event name="postGetExcerpt" type="synch" priority="10" />
+		<event name="pageGetContent" type="synch" priority="10" />
+		<event name="pageGetExcerpt" type="synch" priority="10" />
+	</listens>
+</plugin>
