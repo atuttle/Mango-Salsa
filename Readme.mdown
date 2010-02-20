@@ -1,0 +1,20 @@
+# Salsa - The Markdown formatting plugin for Mango Blog
+
+Salsa is a plugin for [Mango Blog](http://www.mangoblog.org) that will take your **post** and **page** content written in [Markdown syntax](http://daringfireball.net/projects/markdown/syntax), and convert it to HTML for display. It uses the [MarkdownJ](http://github.com/myabc/markdownj) (Java) Markdown engine to do so in a manner usable by any modern CFML engine.
+
+Salsa is compatible with most existing Syntax Highlighting plugins, for those of you who like to post code on your blogs.
+
+ * **ColorCoding**: Compatible.
+ * [**Prettify**](http://prettify.riaforge.org): Compatible.
+ * [**SyntaxHighlighter**]: I'm working on it, with input from the plugin author.
+
+
+Salsa also formats Post and Page excerpts.
+
+## Installing a Markdown editor
+
+You could, if you wanted to, [disable TinyMCE for your blog](http://remotesynthesis.com/post.cfm/turning-tinymce-on-and-off-on-the-fly), and just write your posts using Markdown syntax. Salsa would work just fine that way. However, by following [these instructions to replace TinyMCE with WMD](http://gist.github.com/309705) you can get a live preview of your post below the textbox as you type, as well as a few toolbar buttons to make adding links, bold/italic, lists, etc easier.
+
+### Is it safe if I already have a lot of content?
+
+In theory, yes. HTML passes through Markdown untouched, so any existing posts written in HTML should not be altered.
