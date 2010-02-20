@@ -16,11 +16,17 @@
 	</target>
 	
 	<target name="make-zip">
-		<delete file="${dir.dev}/build.zip" />
+		<delete file="${dir.dev}/Mango-Salsa.zip" />
 		<zip 
-			destfile="${dir.dev}/build.zip"
+			destfile="${dir.dev}/Mango-Salsa.zip"
 			basedir="${dir.dev}"
-			excludes="**/.DS_Store,build.xml,.git/**,.settings/**,.project,settings.xml,.gitignore"
+			excludes="**/.DS_Store,build.xml,.git/**,.settings/**,.project,wmd/**"
+		/>
+		<delete file="${dir.dev}/wmd.zip" />
+		<zip 
+			destfile="${dir.dev}/wmd.zip"
+			basedir="${dir.dev}/wmd"
+			excludes="**/.DS_Store,**/*.psd"
 		/>
 	</target>
 
