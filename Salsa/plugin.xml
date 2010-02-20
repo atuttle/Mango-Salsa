@@ -21,7 +21,7 @@ VERSION INFORMATION:
 This file is part of Salsa.
 -->
 <plugin id="com.fusiongrokker.plugins.Salsa" name="Salsa" version="1.0" provider-name="Adam Tuttle | http://fusiongrokker.com" class="Salsa.Handler">
-	<description><![CDATA[ Converts Markdown syntax in your posts to HTML. See: <a href="http://gist.github.com/????">How to setup a Markdown editor for Mango Blog</a>.<br/>
+	<description><![CDATA[ Converts Markdown syntax in your posts to HTML. See: <a href="http://gist.github.com/309705">How to setup a Markdown editor for Mango Blog</a>.<br/>
 	<br/>
 	Written by <a href="http://fusiongrokker.com">Adam Tuttle</a><br/>
 	Find the latest version at: <a href="http://fusiongrokker.com/page/projects">FusionGrokker</a> ]]></description>

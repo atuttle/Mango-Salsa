@@ -43,7 +43,7 @@ This file is part of Salsa.
 		<cfreturn this/>
 	</cffunction>
 	<cffunction name="setup" hint="This is run when a plugin is activated" access="public" output="false" returntype="any">
-		<cfreturn "Plugin activated. Would you like to <a href='generic_settings.cfm?event=Salsa-settings&amp;owner=Salsa&amp;selected=Salsa-settings'>configure it</a>?" />
+		<cfreturn "Plugin activated. Would you like to <a href='generic_settings.cfm?event=Salsa-settings&amp;owner=Salsa&amp;selected=Salsa-settings'>configure it</a>? Also, make sure you follow <a href='http://gist.github.com/309705'>these instructions</a>." />
 	</cffunction>
 	<cffunction name="unsetup" hint="This is run when a plugin is de-activated" access="public" output="false" returntype="any">
 		<cfreturn "Plugin De-activated" />
