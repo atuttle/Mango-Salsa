@@ -6,7 +6,7 @@ Salsa is compatible with most existing Syntax Highlighting plugins, for those of
 
  * **ColorCoding**: Compatible.
  * [**Prettify**](http://prettify.riaforge.org): Compatible.
- * [**SyntaxHighlighter**]: I'm working on it, with input from the plugin author.
+ * [**SyntaxHighlighter**](http://objectivebias.com/entry/new-and-much-improved-syntaxhighlighter-plugin-for-mango): I'm working on it, with input from the plugin author.
 
 
 Salsa also formats Post and Page excerpts.
