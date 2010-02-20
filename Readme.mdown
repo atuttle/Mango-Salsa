@@ -8,7 +8,6 @@ Salsa is compatible with most existing Syntax Highlighting plugins, for those of
  * [**Prettify**](http://prettify.riaforge.org): Compatible.
  * [**SyntaxHighlighter**](http://objectivebias.com/entry/new-and-much-improved-syntaxhighlighter-plugin-for-mango): I'm working on it, with input from the plugin author.
 
-
 Salsa also formats Post and Page excerpts.
 
 ## Installing a Markdown editor
@@ -18,3 +17,7 @@ You could, if you wanted to, [disable TinyMCE for your blog](http://remotesynthe
 ### Is it safe if I already have a lot of content?
 
 In theory, yes. HTML passes through Markdown untouched, so any existing posts written in HTML should not be altered.
+
+### A note for users running ColdFusion 7
+
+In order for this plugin to function, you will need to make sure you have a ColdFusion mapping named "org/mangoblog" that points to the `components` folder inside your Mango Blog install. In ColdFusion 8+, this is not necessary.
