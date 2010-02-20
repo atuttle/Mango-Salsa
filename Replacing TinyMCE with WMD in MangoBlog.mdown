@@ -1,3 +1,0 @@
-# Replacing TinyMCE with WMD (Markdown) in your MangoBlog
-
-Mango Blog future plans include a way to add custom editors in a manner that is simple and compartmentalized, but this is not yet realized. Therefore, in order to accomplish this goal toay, we must edit a few files. Don't worry, it's not difficult and there aren't that many to do.
